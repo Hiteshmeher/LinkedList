@@ -16,9 +16,9 @@ public class LinkedListMain {
 		 * display values through display method
 		 */
 		LinkedList list = new LinkedList();
-		list.add(56);
-		list.add(30);
-		list.add(70);
+		list.push(70);
+		list.push(30);
+		list.push(56);
 		list.display();
 	}
 }
