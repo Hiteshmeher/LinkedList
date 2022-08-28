@@ -38,4 +38,17 @@ public class LinkedList {
 			temp = temp.next;
 		}
 	}
+	
+	public void push(int data) {
+		//Creating object of class Node
+		Node newNode = new Node(data);
+		// checking head is null or not
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			newNode.next = head;
+			head = newNode;
+		}
+	}
 }
