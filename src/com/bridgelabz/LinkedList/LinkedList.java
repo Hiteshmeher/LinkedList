@@ -44,11 +44,22 @@ public class LinkedList {
 		Node newNode = new Node(data);
 		// checking head is null or not
 		if (head == null) {
-			head = newNode;
+			head = newNode; // if head is null, creating head = new node
 			tail = newNode;
 		} else {
 			newNode.next = head;
 			head = newNode;
+		}
+	}
+	
+	public void append(int data) {
+		Node newNode = new Node(data);
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			tail.next = newNode;
+			tail = newNode;
 		}
 	}
 }

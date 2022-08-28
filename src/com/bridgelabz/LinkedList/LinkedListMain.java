@@ -1,4 +1,5 @@
 package com.bridgelabz.LinkedList;
+
 /**
  * 
  * @author HITESH
@@ -10,15 +11,11 @@ public class LinkedListMain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		/**
-		 * creating object of linked list class
-		 * added values through add method
-		 * display values through display method
-		 */
+		// creating Object of LinkedList Class
 		LinkedList list = new LinkedList();
-		list.push(70);
-		list.push(30);
-		list.push(56);
-		list.display();
+		list.add(56); 		// Adding 56
+		list.append(30); 	// Append 30 to 56
+		list.append(70); 	// Append 70 to 30
+		list.display(); 	// Printing the Final List
 	}
 }
